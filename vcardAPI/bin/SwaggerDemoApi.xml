@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>vcardAPI</name>
+    </assembly>
+    <members>
+        <member name="F:vcardAPI.SecurePasswordHasher.SaltSize">
+            <summary>
+            Size of salt.
+            </summary>
+        </member>
+        <member name="F:vcardAPI.SecurePasswordHasher.HashSize">
+            <summary>
+            Size of hash.
+            </summary>
+        </member>
+        <member name="M:vcardAPI.SecurePasswordHasher.Hash(System.String,System.Int32)">
+            <summary>
+            Creates a hash from a password.
+            </summary>
+            <param name="password">The password.</param>
+            <param name="iterations">Number of iterations.</param>
+            <returns>The hash.</returns>
+        </member>
+        <member name="M:vcardAPI.SecurePasswordHasher.Hash(System.String)">
+            <summary>
+            Creates a hash from a password with 10000 iterations
+            </summary>
+            <param name="password">The password.</param>
+            <returns>The hash.</returns>
+        </member>
+        <member name="M:vcardAPI.SecurePasswordHasher.IsHashSupported(System.String)">
+            <summary>
+            Checks if hash is supported.
+            </summary>
+            <param name="hashString">The hash.</param>
+            <returns>Is supported?</returns>
+        </member>
+        <member name="M:vcardAPI.SecurePasswordHasher.Verify(System.String,System.String)">
+            <summary>
+            Verifies a password against a hash.
+            </summary>
+            <param name="password">The password.</param>
+            <param name="hashedPassword">The hash.</param>
+            <returns>Could be verified?</returns>
+        </member>
+    </members>
+</doc>
